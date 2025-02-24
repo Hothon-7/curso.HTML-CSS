@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fundo fixo de tela</title>
     <style>
-        /**background-size: contain; mostra a imagem completa e background-size: cover; corta a imagem para ocupar 100% da view port **/
+        /*background-size: contain; mostra a imagem completa e background-size: cover; corta a imagem para ocupar 100% da view port
+        background-attachment: fixed; a imagem fica fixa na tela */
         body{
+            /*
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*
+            shorthand - background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -37,7 +49,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod quisquam deserunt voluptate molestias quidem provident ut incidunt amet. Quos modi architecto quas facilis quae, deleniti tempora reprehenderit cumque deserunt!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis id odit. Maiores nesciunt nisi voluptatem, molestiae enim obcaecati numquam iste accusamus assumenda temporibus necessitatibus voluptates deleniti blanditiis, consectetur a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo libero saepe, reiciendis iusto adipisci beatae officia optio dicta atque commodi soluta eligendi, esse eveniet explicabo assumenda distinctio. Voluptate, fugit distinctio.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod quisquam deserunt voluptate molestias quidem provident ut incidunt amet. Quos modi architecto quas facilis quae, deleniti tempora reprehenderit cumque deserunt!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis id odit. Maiores nesciunt nisi voluptatem, molestiae enim obcaecati numquam iste accusamus assumenda temporibus necessitatibus voluptates deleniti blanditiis, consectetur a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo libero saepe, reiciendis iusto adipisci beatae officia optio dicta atque commodi soluta eligendi, esse eveniet explicabo assumenda distinctio. Voluptate, fugit distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod quisquam deserunt voluptate molestias quidem provident ut incidunt amet. Quos modi architecto quas facilis quae, deleniti tempora reprehenderit cumque deserunt!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis id odit. Maiores nesciunt nisi voluptatem, molestiae enim obcaecati numquam iste accusamus assumenda temporibus necessitatibus voluptates deleniti blanditiis, consectetur a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo libero saepe, reiciendis iusto adipisci beatae officia optio dicta atque commodi soluta eligendi, esse eveniet explicabo assumenda distinctio. Voluptate, fugit distinctio.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod quisquam deserunt voluptate molestias quidem provident ut incidunt amet. Quos modi architecto quas facilis quae, deleniti tempora reprehenderit cumque deserunt!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis id odit. Maiores nesciunt nisi voluptatem, molestiae enim obcaecati numquam iste accusamus assumenda temporibus necessitatibus voluptates deleniti blanditiis, consectetur a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo libero saepe, reiciendis iusto adipisci beatae officia optio dicta atque commodi soluta eligendi, esse eveniet explicabo assumenda distinctio. Voluptate, fugit distinctio.</p>
-        
+
     </main>
 </body>
 </html>
