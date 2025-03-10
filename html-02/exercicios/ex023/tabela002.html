@@ -11,10 +11,17 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
         }
         thead, tfoot{
             background-color: gray;
@@ -23,13 +30,23 @@
         td.num{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <!--
         ANATOMIA DE TABELAS GRANDES
-        TABLE
+        TABLE 
+        CAPTION
         THEAD
             tr, td, th
         TBODY
@@ -37,14 +54,18 @@
         TFOOT
             tr, td, th
 
-    
+        na tag tbody > tr:nth-child(2n) posso usar even 
+        ou posso usar tbody > tr:nth-child(2n -1) que tb é odd
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-               <th>Estado</th>
-               <th>Populaçao</th>
+               <th scope="col">Estado</th>
+               <th scope="col" style="width: 50px;">Populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -159,10 +180,25 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium, exercitationem autem quasi quae quo temporibus? Porro, fugiat quae? Culpa laudantium ut reprehenderit illum expedita non dolore et neque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam sapiente, porro ipsum ipsa nesciunt. In optio amet maiores quis, eius sint! Ratione, et fugit. Consectetur veritatis magnam in Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur, ratione, modi deleniti corrupti natus atque ullam voluptate perspiciatis, nesciunt consectetur dignissimos dolores? Blanditiis veritatis animi earum cumque similique dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti deserunt laboriosam ullam quae enim ipsam voluptatibus, placeat blanditiis tenetur! Dolor id perspiciatis esse laudantium similique cum corporis adipisci est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellat labore, earum ullam quam minima quas. Molestiae, exercitationem error deleniti aliquid voluptates saepe provident corporis vero, vitae eius nulla rerum!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium, exercitationem autem quasi quae quo temporibus? Porro, fugiat quae? Culpa laudantium ut reprehenderit illum expedita non dolore et neque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam sapiente, porro ipsum ipsa nesciunt. In optio amet maiores quis, eius sint! Ratione, et fugit. Consectetur veritatis magnam in Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur, ratione, modi deleniti corrupti natus atque ullam voluptate perspiciatis, nesciunt consectetur dignissimos dolores? Blanditiis veritatis animi earum cumque similique dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti deserunt laboriosam ullam quae enim ipsam voluptatibus, placeat blanditiis tenetur! Dolor id perspiciatis esse laudantium similique cum corporis adipisci est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellat labore, earum ullam quam minima quas. Molestiae, exercitationem error deleniti aliquid voluptates saepe provident corporis vero, vitae eius nulla rerum!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium, exercitationem autem quasi quae quo temporibus? Porro, fugiat quae? Culpa laudantium ut reprehenderit illum expedita non dolore et neque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam sapiente, porro ipsum ipsa nesciunt. In optio amet maiores quis, eius sint! Ratione, et fugit. Consectetur veritatis magnam in Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur, ratione, modi deleniti corrupti natus atque ullam voluptate perspiciatis, nesciunt consectetur dignissimos dolores? Blanditiis veritatis animi earum cumque similique dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti deserunt laboriosam ullam quae enim ipsam voluptatibus, placeat blanditiis tenetur! Dolor id perspiciatis esse laudantium similique cum corporis adipisci est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellat labore, earum ullam quam minima quas. Molestiae, exercitationem error deleniti aliquid voluptates saepe provident corporis vero, vitae eius nulla rerum!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium, exercitationem autem quasi quae quo temporibus? Porro, fugiat quae? Culpa laudantium ut reprehenderit illum expedita non dolore et neque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam sapiente, porro ipsum ipsa nesciunt. In optio amet maiores quis, eius sint! Ratione, et fugit. Consectetur veritatis magnam in Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur, ratione, modi deleniti corrupti natus atque ullam voluptate perspiciatis, nesciunt consectetur dignissimos dolores? Blanditiis veritatis animi earum cumque similique dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti deserunt laboriosam ullam quae enim ipsam voluptatibus, placeat blanditiis tenetur! Dolor id perspiciatis esse laudantium similique cum corporis adipisci est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellat labore, earum ullam quam minima quas. Molestiae, exercitationem error deleniti aliquid voluptates saepe provident corporis vero, vitae eius nulla rerum!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium, exercitationem autem quasi quae quo temporibus? Porro, fugiat quae? Culpa laudantium ut reprehenderit illum expedita non dolore et neque porro?Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam sapiente, porro ipsum ipsa nesciunt. In optio amet maiores quis, eius sint! Ratione, et fugit. Consectetur veritatis magnam in Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur, ratione, modi deleniti corrupti natus atque ullam voluptate perspiciatis, nesciunt consectetur dignissimos dolores? Blanditiis veritatis animi earum cumque similique dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti deserunt laboriosam ullam quae enim ipsam voluptatibus, placeat blanditiis tenetur! Dolor id perspiciatis esse laudantium similique cum corporis adipisci est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellat labore, earum ullam quam minima quas. Molestiae, exercitationem error deleniti aliquid voluptates saepe provident corporis vero, vitae eius nulla rerum!
+    </p>
 </body>
 </html>
