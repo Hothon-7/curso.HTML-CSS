@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Todas as mídias
+
+
+ " OBS - pesquisar por typical device beack point"
+
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768 px até 992px
+Desktop: 992px ate 1200px
+TV: acima de 1200px
+*/
+
+@media print {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: red !important;
+    }
+}
+
+@media screen and(min-width: 992px) and(max-width: 1200px){
+    
+}
+
+@media screen and(min-width: 1200px){
+    
+}
