@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexible Box</title>
+
+    <style>
+        
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black ;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i0 {
+            order: 0;
+        }
+
+        div#i1 {
+            order: -2;
+        }
+
+        div#i2 {
+            order: 4;
+        }
+
+        div#i3 {
+            order: 8;
+        }
+
+        div#i4 {
+            order: 2;
+        }
+
+        div#i5 {
+            order: -9;
+        }
+
+        div#i6 {
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i0">a</div>
+        <div class="item" id="i1">b</div>
+        <div class="item" id="i2">c</div>
+        <div class="item" id="i3">d</div>
+        <div class="item" id="i4">e</div>
+        <div class="item" id="i5">f</div>
+        <div class="item" id="i6">g</div>
+    </div>
+</body>
+</html>
+
+<!--
+    O align-sef tem 5 codes funciona em cross-axis
+    auto = alinhamento pelo pai
+    flex-start = inicio crox-axis
+    flex-end = fim crox-axis
+    center = central
+    stretch = vai dar uma esticada no alinhamento dos itens para ocupar o espaço inteiro
+-->
